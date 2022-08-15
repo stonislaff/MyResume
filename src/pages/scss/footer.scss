@@ -1,0 +1,36 @@
+$imgWidth: 6  0px;
+$imgHeight: 60px;
+footer{
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.icons{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+  .icon{
+    flex: 10 10 none;
+    margin: 0 5px;
+    img {
+      width: $imgWidth;
+      height: $imgHeight;
+    }
+    a{
+      height: $imgHeight;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .icons{
+    .icon{
+      img{
+        width: $imgWidth - 20;
+        height: $imgHeight - 20;
+      }
+    }
+  }
+}

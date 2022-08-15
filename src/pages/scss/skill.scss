@@ -1,0 +1,85 @@
+@import "colors";
+
+
+$starWidth: 30px;
+$starHeight: 30px;
+$infoBagColor: rgb(255, 0, 0);
+$infoBagHoverColor: rgba(0, 0, 0, 0.71);
+$fontSize: 24px;
+
+.starImg{
+  img{
+    width: $starWidth;
+    height: $starHeight;
+  }
+}
+
+.emptyStarImg{
+  img{
+    width: $starWidth;
+    height: $starHeight;
+  }
+}
+
+.skill{
+  display: flex;
+  width: 80%;
+  margin-bottom: 3%;
+
+  .skillName{
+    min-height: 15%;
+    margin-left: 10%;
+    margin-right: 15%;
+    width: 30%;
+    min-width: 140px;
+    margin: auto;
+    h3{
+      font-size: $fontSize;
+    }
+  }
+}
+.skill:hover{
+    cursor: default;
+}
+.skillMarks{
+  display: flex;
+}
+
+
+@media (max-width: 850px) {
+  .starImg{
+    img{
+      width: $starWidth - 10;
+      height: $starHeight - 10;
+    }
+  }
+  .skillName{
+    font-size: $fontSize - 10;
+  }
+  .emptyStarImg{
+    img{
+      width: $starWidth - 10;
+      height: $starHeight - 10;
+    }
+  }
+
+}
+
+@media (max-width: 1400px) {
+  .starImg{
+    img{
+      width: $starWidth - 5;
+      height: $starHeight - 5;
+    }
+  }
+  .skillName{
+    font-size: $fontSize - 5;
+  }
+  .emptyStarImg{
+    img{
+      width: $starWidth - 5;
+      height: $starHeight - 5;
+    }
+  }
+
+}

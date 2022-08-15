@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import "colors";
+
+$headerFontSize: 35px;
+
+header{
+  width: 100%;
+  z-index: 100;
+  align-items: center;
+  align-content: center;
+  font-size: $headerFontSize;
+  font-family: 'Acme', sans-serif;
+
+  .Navigation{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+
+
+
+    .NavChild {
+      a {
+        text-decoration: none;
+        border-bottom: 2px $linksUnderLine solid;
+        line-height: 30px;
+      }
+      span{
+        color: white;
+      }
+
+      span:hover{
+        cursor: pointer;
+        color: #c5eeca;
+      }
+      a:hover{
+        border-bottom: 2px $borderAHover solid;
+      }
+      a.active{
+        border-bottom: 2px white solid;
+        line-height: 40px;
+        span{
+          color: $navActive;
+        }
+      }
+      display: flex;
+      position: center;
+      align-items: center;
+      align-content: center;
+    }
+
+
+    .NavChild:first-child{
+      margin-right: 60px;
+    }
+    .NavChild:last-child{
+      margin-left: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header{
+    font-size: 20px;
+    .Navigation {
+        .NavChild:first-child {
+          margin-right: 20px;
+        }
+
+        .NavChild:last-child {
+          margin-left: 20px;
+        }
+        .NavChild{
+          font-size: 20px;
+          a.active{
+            font-size: 20px;
+            border-bottom: 2px white solid;
+            line-height: 40px;
+            span{
+              color: $navActive;
+            }
+          }
+        }
+    }
+  }
+}
