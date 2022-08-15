@@ -1,7 +1,43 @@
 @import "colors";
-
+$sizeImage: 120px;
+$contactImageSize: 30px;
 .card{
-  h3 {
-
+  width: 20%;
+  min-width: 300px;
+  background: $infoBagColor;
+  display: flex;
+  padding: 1% 1% 0.3% 1%;
+  .cardTechnologies{
+    margin-top: 7%;
+  }
+  .cardName{
+    margin-bottom: 3%;
+  }
+  img{
+    margin-top: 20%;
+    width: $sizeImage;
+    height: $sizeImage;
+  }
+  .cardText{
+    color: white;
+    margin-left: 5%;
+    .cardContact{
+      display: flex;
+      justify-content: flex-end;
+      max-height: 40px;
+      }
+      a{
+        max-width: $contactImageSize;
+        max-height: $contactImageSize;
+        margin-right: 7%;
+        img{
+          margin-top: 60%;
+          width: $contactImageSize;
+          height: $contactImageSize;
+      }
+        img:hover{
+          cursor: pointer;
+        }
+    }
   }
 }

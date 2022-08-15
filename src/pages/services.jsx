@@ -8,7 +8,7 @@ function Services(){
         <body>
             <BackgroundVideo/>
             <div className="content">
-                <ServiceCard name="Test Name" description="some description about this card" image={test} technologies="Python, C#"/>
+                <ServiceCard name="Telegram chat-bot" description="I provide the service of writing a chat bot for Telegram of any complexity." image={test} technologies="Python, C#"/>
             </div>
         </body>
     )
