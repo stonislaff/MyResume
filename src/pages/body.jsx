@@ -47,6 +47,7 @@ function Body() {
                         <Skill marks={5} name={"HTML"}/>
                         <Skill marks={5} name={"CSS"}/>
                         <Skill marks={4} name={"SCSS/SAAS"}/>
+                        <Skill marks={4} name={"Responsive layout"}/>
                         <Skill marks={3} name={"MongoDB"}/>
                         <Skill marks={5} name={"SQlite"}/>
                     </div>
