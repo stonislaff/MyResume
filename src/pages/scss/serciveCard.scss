@@ -2,19 +2,38 @@
 $sizeImage: 120px;
 $contactImageSize: 30px;
 .card{
-  width: 20%;
+  align-self: center;
+  margin-bottom: 2%;
+  border: $skillBorder solid 1px;
+  width: 30%;
   min-width: 300px;
   background: $infoBagColor;
   display: flex;
-  padding: 1% 1% 0.3% 1%;
+  padding: 1% 1% 0.1% 1%;
+  .cardImage{
+    max-height: $sizeImage;
+    display: flex;
+    align-self: center;
+  }
   .cardTechnologies{
-    margin-top: 7%;
+    margin-top: 13%;
+    text-decoration-line: underline;
   }
   .cardName{
     margin-bottom: 3%;
   }
+  .cardDescription{
+    color: $textAbout;
+    min-width: 150px;
+    min-height: 30px;
+    max-height: 300px;
+    h3{
+      font-size: 17px;
+    }
+  }
+
   img{
-    margin-top: 20%;
+    align-self: end;
     width: $sizeImage;
     height: $sizeImage;
   }
@@ -32,12 +51,35 @@ $contactImageSize: 30px;
         margin-right: 7%;
         img{
           margin-top: 60%;
-          width: $contactImageSize;
+          width:  $contactImageSize;
           height: $contactImageSize;
       }
         img:hover{
           cursor: pointer;
         }
+    }
+  }
+}
+
+.card:hover {
+  border: $skillBorderHover solid 1px;
+  background: $infoBagHoverColor;
+}
+
+@media (max-width: 1300px) {
+  .card{
+    min-width: 350px;
+    padding-left: 10px;
+    margin-bottom: 10%;
+    img{
+      margin-top: 15%;
+    }
+    .cardContact{
+      a{
+        img{
+          margin-top: 50%;
+        }
+      }
     }
   }
 }
