@@ -4,14 +4,15 @@ import '../scss/serciveCard.scss'
 
 function ProjectCard(props){
     let linkArr = []
-    linkArr.push(
-        <a href={props.links[0]} target="_new"><img src={git}/></a>
-    )
+
     if (props.links.length === 2){
         linkArr.push(
             <a href={props.links[1]} target="_new"><img src={planet}/></a>
         )
     }
+    linkArr.push(
+        <a href={props.links[0]} target="_new"><img src={git}/></a>
+    )
     return(
         <div className="card">
             <div className="cardImage">
