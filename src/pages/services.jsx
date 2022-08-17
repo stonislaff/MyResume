@@ -5,7 +5,9 @@ import bot from '../templates/servicesImage/bot.png'
 import desktop from '../templates/servicesImage/desktop.png'
 import web from '../templates/servicesImage/web.png'
 import parse from '../templates/servicesImage/parse.png'
+
 function Services(){
+    document.title = "Stanislav Sobkovich - Services"
     return(
         <body>
             <BackgroundVideo/>

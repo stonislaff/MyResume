@@ -5,6 +5,7 @@ import  './components/skill'
 import Skill from "./components/skill";
 import BackgroundVideo from "./components/background";
 function Body() {
+    document.title = 'Stanislav Sobkovich - Resume'
     return (
         <div className="Body">
             <body>
