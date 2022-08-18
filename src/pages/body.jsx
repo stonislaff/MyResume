@@ -1,6 +1,6 @@
 import './scss/body.scss';
 import background from '../templates/background.mp4'
-import myphoto from '../templates/myphoto.jpg'
+import myphoto from '../templates/myphoto.png'
 import  './components/skill'
 import Skill from "./components/skill";
 import BackgroundVideo from "./components/background";
